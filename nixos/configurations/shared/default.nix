@@ -19,6 +19,8 @@ in {
     ];
     keep-derivations = mkDefault true;
     keep-outputs = mkDefault true;
+    auto-optimise-store = mkDefault true;
+    sandbox = mkDefault true;
   };
 
   nixpkgs.config.permittedInsecurePackages = [
