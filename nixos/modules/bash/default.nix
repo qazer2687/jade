@@ -13,7 +13,6 @@ in {
 
   config = lib.mkIf config.modules.bash.enable {
     programs.bash = {
-      enable = true;
       shellAliases = aliases;
     };
   };
