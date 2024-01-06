@@ -37,6 +37,8 @@ in {
     })
   ];
 
+  services.xserver.enable = false;
+
   console.keyMap = "colemak";
 
   time.timeZone = mkDefault "Europe/London";
@@ -60,6 +62,8 @@ in {
     sessionVariables = {
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXPKGS_ALLOW_INSECURE = "1";
+      NIXOS_OZONE_WL = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
     };
   };
 }
