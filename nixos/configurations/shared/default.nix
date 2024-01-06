@@ -1,4 +1,4 @@
-{lib, ...}: let
+{lib, pkgs, ...}: let
   inherit (lib) mkDefault;
 in {
   services.logrotate.enable = false;
