@@ -7,11 +7,10 @@
   options.modules.sway.enable = lib.mkEnableOption "";
 
   config = lib.mkIf config.modules.sway.enable {
+    security.polkit.enable = true;
     programs.sway = {
       enable = true;
       wrapperFeatures.gtk = true;
-      security.polkit.enable = true;
-
       package = pkgs.swayfx.overrideAttrs (_old: {passthru.providedSessions = ["sway"];});
 
       extraPackages = with pkgs; [
