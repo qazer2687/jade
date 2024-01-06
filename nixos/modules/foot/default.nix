@@ -10,7 +10,7 @@
     environment.systemPackages = with pkgs; [
       foot
     ];
-    environment.etc."foot/foot.ini".text = ''
+    environment.etc."xdg/foot/foot.ini".text = ''
       font=FiraCode Nerd Font:size=12
       font-bold=FiraCode Nerd Font:size=12
       pad=16x16
