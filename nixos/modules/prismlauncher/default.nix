@@ -12,6 +12,7 @@
         prismlauncher
         gamemode
         mangohud
+        glfw-wayland-minecraft
       ];
       etc = {
         "jdks/8-temurin".source = lib.getBin pkgs.temurin-bin-8;
