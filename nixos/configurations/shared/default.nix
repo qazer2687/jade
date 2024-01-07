@@ -37,6 +37,8 @@ in {
     })
   ];
 
+  services.xserver.displayManager.gdm.enable = true;
+
   console.keyMap = "colemak";
 
   time.timeZone = mkDefault "Europe/London";
