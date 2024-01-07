@@ -37,7 +37,7 @@ in {
     })
   ];
 
-  services.xserver.enable = true;
+  programs.xwayland.enable = true;
 
   console.keyMap = "colemak";
 
