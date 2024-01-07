@@ -7,7 +7,18 @@
   options.modules.sway.enable = lib.mkEnableOption "";
 
   config = lib.mkIf config.modules.sway.enable {
-    security.polkit.enable = true;
+    security = {
+      polkit.enable = true;
+      pam.loginLimits = [
+        {
+          domain = "@users";
+          item = "rtprio";
+          type = "-";
+          value = 1;
+        }
+      ];
+    };
+
     programs.sway = {
       enable = true;
       wrapperFeatures.gtk = true;
