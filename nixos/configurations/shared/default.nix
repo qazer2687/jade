@@ -55,7 +55,7 @@ in {
       ncdu
       firefox
       obsidian
-      vscode
+      vscodium-fhs
     ];
     sessionVariables = {
       NIXPKGS_ALLOW_UNFREE = "1";
