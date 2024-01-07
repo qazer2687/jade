@@ -67,7 +67,7 @@ in {
       __GL_VRR_ALLOWED = "0";
       MOZ_DISABLE_RDD_SANDBOX = "1";
       MOZ_ENABLE_WAYLAND = "1";
-      WAYLAND_DISPLAY = "";
+      #WAYLAND_DISPLAY = "";
     };
   };
 }
