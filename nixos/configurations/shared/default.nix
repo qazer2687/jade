@@ -37,7 +37,7 @@ in {
     })
   ];
 
-  services.xserver.enable = false;
+  services.xserver.enable = true;
 
   console.keyMap = "colemak";
 
@@ -68,6 +68,8 @@ in {
       __GL_SYNC_TO_VBLANK = "0";
       __GL_VRR_ALLOWED = "0";
       MOZ_DISABLE_RDD_SANDBOX = "1";
+      MOZ_ENABLE_WAYLAND = "1";
+      WAYLAND_DISPLAY = "";
     };
   };
 }
