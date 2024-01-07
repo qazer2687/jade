@@ -37,6 +37,8 @@ in {
     })
   ];
 
+  programs.xwayland.enable = true;
+
   console.keyMap = "colemak";
 
   time.timeZone = mkDefault "Europe/London";
