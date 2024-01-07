@@ -64,6 +64,10 @@ in {
       NIXPKGS_ALLOW_INSECURE = "1";
       NIXOS_OZONE_WL = "1";
       WLR_NO_HARDWARE_CURSORS = "1";
+      __GL_GSYNC_ALLOWED = "0";
+      __GL_SYNC_TO_VBLANK = "0";
+      __GL_VRR_ALLOWED = "0";
+      MOZ_DISABLE_RDD_SANDBOX = "1";
     };
   };
 }

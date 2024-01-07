@@ -18,7 +18,7 @@
   };
 
   environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty1 ]] && sway
+    [[ "$(tty)" == /dev/tty1 ]] && sway -D noscanout "$@"
   '';
 
   modules = {
