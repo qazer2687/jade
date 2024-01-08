@@ -18,7 +18,7 @@
   };
 
   environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty1 ]] && sway -D noscanout "$@"
+    [[ "$(tty)" == /dev/tty1 ]] && sway --unsupported-gpu -D noscanout "$@"
   '';
 
   modules = {
