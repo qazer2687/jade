@@ -17,9 +17,7 @@
     };
   };
 
-  environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty1 ]] && sway --unsupported-gpu -D noscanout "$@"
-  '';
+  services.xserver.desktopManager.gnome.enable = true;
 
   modules = {
     bash.enable = true;
@@ -29,10 +27,8 @@
     nvidia.enable = true;
     pipewire.enable = true;
     prismlauncher.enable = true;
-    sway.enable = true;
     systemd-boot.enable = true;
     tlp.enable = true;
-    waybar.enable = true;
     zram.enable = true;
   };
 }
