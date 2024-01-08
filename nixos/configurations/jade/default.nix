@@ -28,7 +28,6 @@
     pipewire.enable = true;
     prismlauncher.enable = true;
     systemd-boot.enable = true;
-    tlp.enable = true;
     zram.enable = true;
   };
 }
