@@ -4,11 +4,11 @@
   ...
 }: {
   imports = [
-    ../../../hardware/jade
+    ../../../hardware/ruby
     ../../modules
   ];
 
-  networking.hostName = "jade";
+  networking.hostName = "ruby";
 
   users.users.alex = {
     isNormalUser = true;
@@ -23,16 +23,15 @@
   ];
   
   modules = {
-    i3.enable = true;
-    alacritty.enable = true;
-    polybar.enable = true;
     bash.enable = true;
     kernel.enable = true;
+    waybar.enable = true;
+    foot.enable = true;
     networkmanager.enable = true;
-    nvidia.enable = true;
+    sway.enable = true;
     pipewire.enable = true;
-    prismlauncher.enable = true;
     systemd-boot.enable = true;
     zram.enable = true;
+    tlp.enable = true;
   };
 }
