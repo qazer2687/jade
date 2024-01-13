@@ -120,15 +120,6 @@
       magenta = "#F5BDE6"
       cyan = "#8BD5CA"
       white = "#B8C0E0"
-
-      [[colors.dim.indexed_colors]]
-      index = 16
-      color = "#F5A97F"
-
-      [[colors.dim.indexed_colors]]
-      index = 17
-      color = "#F4DBD6"
-
     '';
   };
 }

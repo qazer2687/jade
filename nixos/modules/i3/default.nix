@@ -20,12 +20,12 @@
     };
     environment.etc."etc/i3/config".text = ''
       set $mod Mod4
-      exec --no-startup-id dex --autostart --environment i3
+      #exec --no-startup-id dex --autostart --environment i3
       bindsym $mod+Return exec alacritty --config-file /etc/alacritty/alacritty.toml
       bindsym $mod+space floating toggle
       bindsym $mod+q kill
       bindsym $mod+e exec --no-startup-id dmenu_run -i -b -nb "#111111" -sb "#ffffff" -nf "#ffffff" -sf "#000000" -fn "FiraCode Nerd Font"
-      exec_always --no-startup-id feh --bg-fill $HOME/.config/feh/wallpaper.png
+      exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wallpaper.png
       exec_always --no-startup-id polybar -c /etc/polybar/config.ini &
       bindsym $mod+Left move left
       bindsym $mod+Down move down
