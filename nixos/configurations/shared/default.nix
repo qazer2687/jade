@@ -39,6 +39,10 @@ in {
   services.xserver.displayManager.gdm.enable = true;
 
   console.keyMap = "colemak";
+  services.xserver = {
+    layout = "gb";
+    xkbVariant = "colemak";
+  };
   
   time.timeZone = mkDefault "Europe/London";
   i18n.defaultLocale = mkDefault "en_GB.UTF-8";
